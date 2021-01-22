@@ -8,6 +8,7 @@ import SwiftUI
 
 // MARK: - GridStyle
 
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 extension View {
 
     /// Sets the style for `WaterfallGrid` within the environment of `self`.

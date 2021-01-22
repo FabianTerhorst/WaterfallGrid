@@ -96,6 +96,7 @@ public struct WaterfallGrid<Data, ID, Content>: View where Data : RandomAccessCo
 
 // MARK: - Initializers
 
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 extension WaterfallGrid {
 
     /// Creates an instance that uniquely identifies views across updates based
@@ -112,6 +113,7 @@ extension WaterfallGrid {
 
 }
 
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 extension WaterfallGrid where ID == Data.Element.ID, Data.Element : Identifiable {
 
     /// Creates an instance that uniquely identifies views across updates based

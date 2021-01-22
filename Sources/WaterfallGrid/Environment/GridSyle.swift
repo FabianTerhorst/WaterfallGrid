@@ -6,6 +6,7 @@
 
 import SwiftUI
 
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 struct GridSyle {
     @PositiveNumber var columnsInPortrait: Int
     @PositiveNumber var columnsInLandscape: Int
@@ -25,11 +26,13 @@ struct GridSyle {
     }
 }
 
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 struct GridStyleKey: EnvironmentKey {
     static let defaultValue = GridSyle(columnsInPortrait: 2, columnsInLandscape: 2,
                                        spacing: 8, animation: .default)
 }
 
+@available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
 extension EnvironmentValues {
     var gridStyle: GridSyle {
         get { self[GridStyleKey.self] }
