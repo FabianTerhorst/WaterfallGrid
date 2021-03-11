@@ -3,7 +3,7 @@
 //
 //  Licensed under the MIT license. See the LICENSE file for more info.
 //
-
+#if !arch(arm)
 import Foundation
 
 @propertyWrapper
@@ -19,3 +19,4 @@ struct PositiveNumber {
         self.wrappedValue = initialValue
     }
 }
+#endif

@@ -3,7 +3,7 @@
 //
 //  Licensed under the MIT license. See the LICENSE file for more info.
 //
-
+#if !arch(arm)
 import SwiftUI
 
 // MARK: - ScrollOptions
@@ -21,3 +21,4 @@ extension View {
     }
 
 }
+#endif

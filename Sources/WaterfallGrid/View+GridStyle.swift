@@ -3,7 +3,7 @@
 //
 //  Licensed under the MIT license. See the LICENSE file for more info.
 //
-
+#if !arch(arm)
 import SwiftUI
 
 // MARK: - GridStyle
@@ -55,3 +55,4 @@ extension View {
     }
 
 }
+#endif

@@ -3,7 +3,7 @@
 //
 //  Licensed under the MIT license. See the LICENSE file for more info.
 //
-
+#if !arch(arm)
 import SwiftUI
 
 struct ElementPreferenceData: Equatable {
@@ -20,3 +20,4 @@ struct ElementPreferenceKey: PreferenceKey {
         value.append(contentsOf: nextValue())
     }
 }
+#endif

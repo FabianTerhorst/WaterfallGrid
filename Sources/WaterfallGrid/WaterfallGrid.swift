@@ -3,7 +3,7 @@
 //
 //  Licensed under the MIT license. See the LICENSE file for more info.
 //
-
+#if !arch(arm)
 import SwiftUI
 
 /// A container that presents items of variable heights arranged in a grid.
@@ -128,3 +128,4 @@ extension WaterfallGrid where ID == Data.Element.ID, Data.Element : Identifiable
     }
 
 }
+#endif
